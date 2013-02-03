@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<template>
+    <description>PHPCR doc template</description>
+    <author>David Buchmann</author>
+    <version>1.0.0</version>
+    <dependencies>
+        <template name="new-black" version="1.0.3" />
+    </dependencies>
+    <transformations>
+        <transformation query="copy" writer="FileIo" source="ajax_search.php" artifact="ajax_search.php"/>
+    <transformation query="copy" writer="FileIo" source="../data/js" artifact="js"/>
+    <transformation query="copy" writer="FileIo" source="../data/syntax_highlighter" artifact="syntax_highlighter"/>
+    <transformation query="copy" writer="FileIo" source="../data/images" artifact="images"/>
+    <transformation query="copy" writer="FileIo" source="templates/abstract/images" artifact="images"/>
+    <transformation query="copy" writer="FileIo" source="templates/abstract/css" artifact="css"/>
+    <transformation query="copy" writer="FileIo" source="templates/new-black/css" artifact="css"/>
+    <transformation query="copy" writer="FileIo" source="templates/new-black/js" artifact="js"/>
+    <transformation query="copy" writer="FileIo" source="templates/phpcr/js" artifact="js"/>
+    <transformation query="" writer="Search" source="" artifact="."/>
+    <transformation query="" writer="xsl" source="templates/abstract/index.xsl" artifact="index.html"/>
+    <transformation query="" writer="xsl" source="templates/phpcr/sidebar.xsl" artifact="nav.html">
+          <parameters>
+                <variables>
+                    <section.dashboard.show>false</section.dashboard.show>
+                    <section.api.show>false</section.api.show>
+                    <section.namespaces.show/>
+                    <section.packages.show>false</section.packages.show>
+                    <section.files.show>false</section.files.show>
+                    <section.files.show-elements>false</section.files.show-elements>
+                    <section.reports.show>true</section.reports.show>
+                    <section.charts.show>false</section.charts.show>
+                </variables>
+            </parameters>
+    </transformation>
+    <transformation query="/project/file/@path" writer="xsl" source="templates/abstract/api-doc.xsl" artifact="files/{$path}"/>
+    <transformation query="" writer="xsl" source="templates/abstract/report_markers.xsl" artifact="report_markers.html"/>
+    <transformation query="" writer="xsl" source="templates/abstract/report_parse_markers.xsl" artifact="report_parse_markers.html"/>
+    <transformation query="" writer="xsl" source="templates/abstract/report_deprecated.xsl" artifact="report_deprecated.html"/>
+    <transformation query="" writer="sourcecode" source="" artifact=""/>
+    <transformation query="" writer="xsl" source="templates/abstract/graph_class.xsl" artifact="graph.html"/>
+    <transformation query="" writer="Graph" source="Class" artifact="classes.svg" />
+    <transformation query="" writer="xsl" source="templates/phpcr/content.xsl" artifact="content.html"/>
+    <!--transformation query="copy" writer="FileIo" source="templates/phpcr/content.xsl" artifact="content.html"/-->
+  </transformations>
+</template>

@@ -1,0 +1,13 @@
+{
+    "name": "phpdocumentor/template-phpcr",
+    "type": "phpdocumentor-template",
+    "description": "phpDocumentor template for PHPCR, extending the new-black template",
+    "keywords": ["documentation", "template", "phpdoc", "phpcr"],
+    "homepage": "http://www.phpdoc.org",
+    "license": "MIT",
+    "require": {
+        "ext-xsl": "*",
+        "phpdocumentor/unified-asset-installer": "1.*",
+        "phpdocumentor/template-new-black": "1.*"
+    }
+}
