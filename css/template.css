@@ -50,3 +50,11 @@ td#sidebar
     color: #FFFFFF;
     text-decoration: none;
 }
+
+.introduction h2 {
+    padding-top: 10px;
+}
+.introduction p {
+    margin-bottom: 6px;
+    margin-right: 12px;
+}

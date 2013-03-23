@@ -4,7 +4,7 @@
   <xsl:include href="../abstract/chrome.xsl" />
 
   <xsl:template name="content">
-
+    <div class="introduction">
     <h1>PHP Content Repository</h1>
 
     <p>This is the API documentation of the PHP Content Repository API based on the Java Content Repository specification (<a href="http://java.net/projects/jsr-283/">JSR-283</a>). If you know JCR, get the <a href="https://raw.github.com/phpcr/phpcr/master/doc/JCR_TO_PHPCR.txt">differences between PHPCR and JCR at a glance</a>. To learn PHPCR, please have a look at our <a href="https://github.com/phpcr/phpcr/blob/master/doc/Tutorial.md">tutorial</a>.</p>
@@ -42,6 +42,7 @@
         PHPCR and this documentation are available under the
         <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache Software License 2.0</a>.
     </p>
+    </div>
   </xsl:template>
 
 </xsl:stylesheet>
