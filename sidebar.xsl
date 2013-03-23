@@ -10,7 +10,9 @@
 
         <div id="sidebar">
             <div id="sidebar-header">
-                <xsl:call-template name="sidebar-header" />
+                <a href="content.html" target="content">
+                    <xsl:call-template name="sidebar-header" />
+                </a>
             </div>
 
             <div id="sidebar-nav">

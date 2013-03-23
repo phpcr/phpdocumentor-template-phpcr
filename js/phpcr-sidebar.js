@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $("#sidebar-nav>h3").click();
+    setTimeout(function() {$("#sidebar-namespaces").click()}, 500);
 });

@@ -16,6 +16,7 @@
     <transformation query="copy" writer="FileIo" source="templates/abstract/css" artifact="css"/>
     <transformation query="copy" writer="FileIo" source="templates/new-black/css" artifact="css"/>
     <transformation query="copy" writer="FileIo" source="templates/new-black/js" artifact="js"/>
+    <transformation query="copy" writer="FileIo" source="templates/phpcr/css" artifact="css"/>
     <transformation query="copy" writer="FileIo" source="templates/phpcr/js" artifact="js"/>
     <transformation query="" writer="Search" source="" artifact="."/>
     <transformation query="" writer="xsl" source="templates/abstract/index.xsl" artifact="index.html"/>
@@ -41,6 +42,6 @@
     <transformation query="" writer="xsl" source="templates/abstract/graph_class.xsl" artifact="graph.html"/>
     <transformation query="" writer="Graph" source="Class" artifact="classes.svg" />
     <transformation query="" writer="xsl" source="templates/phpcr/content.xsl" artifact="content.html"/>
-    <!--transformation query="copy" writer="FileIo" source="templates/phpcr/content.xsl" artifact="content.html"/-->
+    <transformation query="copy" writer="FileIo" source="templates/phpcr/images/PHPCR.png" artifact="images/PHPCR.png"/>
   </transformations>
 </template>
