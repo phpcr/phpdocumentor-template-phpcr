@@ -36,6 +36,14 @@
     </pre>
     <br clear="all"/>
 
+    <h2>PHPCR-Utils</h2>
+
+    <p>Note that the classes in the namespace <tt>PHPCR\Util</tt> are not part of the PHPCR standard but provided to cover
+        common use cases of PHPCR implementations and client applications. The utils are implementation neutral.<br/>
+        Jackalope and Doctrine PHPCR-ODM use them, but
+        other implementations might not. You can simply require phpcr/phpcr-utils in your projects composer.json file to be sure to have them.
+    </p>
+
     <h2>License</h2>
 
     <p>
